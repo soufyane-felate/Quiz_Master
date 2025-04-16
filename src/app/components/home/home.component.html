@@ -1,0 +1,26 @@
+<div class="home-container">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="home">
+      <h1 class="title">Quiz Master</h1>
+      <div class="desc">
+        Welcome to <strong>Quiz Master</strong>, a fun and interactive quiz game designed to challenge your knowledge in various topics!
+        Test your brainpower with multiple-choice questions, earn points for correct answers, and see your final score at the end.
+        Ready to play? Let’s get started!
+      </div>
+      <form (ngSubmit)="startQuiz()">
+  <div class="mb-3">
+    <label for="category">category</label>
+    <select [(ngModel)]="category" name="category" class="form-control">
+      <option *ngFor="let cat of categories" [value]="cat.id">{{cat.name}}</option>
+    </select>
+  </div>
+  <div class="mb-3">
+    <label for="difficulty">difficulty : </label>
+    <select [(ngModel)] name="difficulty" id=""></select>
+  </div>
+        <a routerLink="/quiz" class="btn btn-primary">Start Quiz</a>
+      </form>
+    </div>
+  </div>
+</div>
