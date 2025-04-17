@@ -1,0 +1,56 @@
+.quiz-container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+.card {
+  border: none;
+  border-radius: 10px;
+  background-color: #f8f9fa;
+}
+
+.card-title {
+  font-weight: 600;
+}
+
+.answer-btn {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.answer-btn:hover {
+  background-color: #e9ecef;
+  border-color: #007bff;
+}
+
+.btn-success,
+.btn-danger {
+  color: white !important;
+}
+
+.btn-lg {
+  padding: 12px 20px;
+}
+
+input.form-control {
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+@media (max-width: 576px) {
+  .quiz-container {
+    padding: 10px;
+  }
+
+  .input-group.w-50 {
+    width: 100% !important;
+  }
+
+  .answer-btn {
+    font-size: 1rem;
+    padding: 10px;
+  }
+}

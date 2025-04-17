@@ -8,16 +8,14 @@ import { Observable } from 'rxjs';
 export class QuizService {
   private basUrl = 'https://opentdb.com/api.php';
 
-  constructor(private http:HttpClient) {}
+  constructor(private http: HttpClient) {}
 
-  getQuestion(category:number,difficulty:string):Observable<any>
-  {
+  getQuestion(category: number, difficulty: string): Observable<any> {
     return this.http.get(
       `${this.basUrl}?amount=10&category=${category}&difficulty=${difficulty}&type=multiple`
     );
   }
-  getCategories():Observable<any>
-  {
+  getCategories(): Observable<any> {
     return this.http.get('https://opentdb.com/api_category.php');
   }
 }

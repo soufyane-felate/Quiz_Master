@@ -12,7 +12,6 @@ import { RouterLink } from '@angular/router';
 export class NavbarComponent {
   navLinks = [
     { path: '/home', label: 'Home' },
-    { path: '/quiz', label: 'Quiz' },
     { path: '/resoult', label: 'Result' },
     { path: '/history', label: 'History' },
   ];
